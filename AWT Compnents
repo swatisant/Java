@@ -1,0 +1,26 @@
+import java.awt.*;
+class TextDemo extends Frame
+  {
+TextDemo()
+           {
+FlowLayout f1=new FlowLayout();
+setLayout(f1);
+setLayout(null);
+                Label L1=new Label("Address:");
+                L1.setBounds(200,100,80,30);
+                 add(L1);
+TextArea a1=new TextArea("Enter Your Text",4,20);
+                 a1.setBounds(400,100,200,150);
+                 add(a1);
+                Button b2=new Button("Submit");
+               b2.setBounds(300,300,100,30);
+                 add(b2);
+            }
+         public static void main(String args[])
+             {
+TextDemo a1=new TextDemo();
+                 a1.setTitle("Checkbox");
+                 a1.setVisible(true);
+                  a1.setSize(800,800);
+           }
+  }
